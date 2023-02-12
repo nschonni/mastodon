@@ -2,7 +2,7 @@
 # This needs to be bullseye-slim because the Ruby image is built on bullseye-slim
 
 FROM ghcr.io/moritzheiber/ruby-jemalloc:3.0.4-slim as ruby
-FROM node:16.18.1-bullseye-slim as build
+FROM node:16.19.0-bullseye-slim as build
 
 COPY --link --from=ruby /opt/ruby /opt/ruby
 
@@ -38,7 +38,7 @@ RUN apt-get update && \
     bundle install -j"$(nproc)" && \
     yarn install --pure-lockfile --network-timeout 600000
 
-FROM node:16.18.1-bullseye-slim
+FROM node:16.19.0-bullseye-slim
 
 ARG UID="991"
 ARG GID="991"
