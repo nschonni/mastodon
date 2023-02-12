@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1.4
 # This needs to be bullseye-slim because the Ruby image is built on bullseye-slim
 
-FROM ghcr.io/moritzheiber/ruby-jemalloc:3.0.4-slim as ruby
+FROM ghcr.io/moritzheiber/ruby-jemalloc:3.1.3-slim as ruby
 FROM node:16.18.1-bullseye-slim as build
 
 COPY --link --from=ruby /opt/ruby /opt/ruby
