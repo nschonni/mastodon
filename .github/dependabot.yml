@@ -37,3 +37,5 @@ updates:
     ignore:
       - dependency-name: "moritzheiber/ruby-jemalloc"
         update-types: ["version-update:semver-minor"] # only suggest patch releases for ruby
+      - dependency-name: "node"
+        update-types: ["version-update:semver-major"] # only node minor releases allowed
