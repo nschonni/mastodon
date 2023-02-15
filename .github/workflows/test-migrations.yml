@@ -22,7 +22,6 @@ env:
   BUNDLE_RETRY: 3
 
 jobs:
-
   test-migrations:
     runs-on: ubuntu-latest
 
