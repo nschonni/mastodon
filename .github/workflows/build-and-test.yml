@@ -123,7 +123,7 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby-version}}
           bundler-cache: true
-          bundler-version: '2.3.26'
+          bundler: '2.3.26'
 
       - name: Load database schema
         run: './bin/rails db:create db:schema:load db:seed'
