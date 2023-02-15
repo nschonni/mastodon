@@ -123,9 +123,11 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby-version}}
           bundler-cache: true
+          bundler-version: '2.3.26'
 
       - name: Load database schema
         run: './bin/rails db:create db:schema:load db:seed'
+
       - run: bundle exec rspec spec --profile 10 --format RspecJunitFormatter --out /tmp/test-results/rspec/results.xml --format progress
 
   test-migrations:
