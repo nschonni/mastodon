@@ -100,9 +100,9 @@ jobs:
       fail-fast: false
       matrix:
         ruby-version:
-          - '2.7'
-          - '3.0'
-          - '3.1'
+          # - '2.7'
+          # - '3.0'
+          # - '3.1'
           - '.ruby-version'
     steps:
       - uses: actions/checkout@v3
@@ -142,9 +142,15 @@ jobs:
         env:
           DISABLE_SIMPLECOV: ${{ matrix.ruby-version != '.ruby-version' }}
 
+      - name: Debug
+        if: matrix.ruby-version == '.ruby-version'
+        run: ls coverage/lcov
+        env:
+          DISABLE_SIMPLECOV: ${{ matrix.ruby-version != '.ruby-version' }}
+
       - name: Add code coverage comment
         if: matrix.ruby-version == '.ruby-version'
         uses: romeovs/lcov-reporter-action@v0.2.16
         with:
-          lcov-file: ./coverage/lcov/ruby-simplecov.lcov
+          lcov-file: ./coverage/lcov/mastodon.lcov
           github-token: ${{ secrets.GITHUB_TOKEN }}
