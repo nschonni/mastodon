@@ -146,7 +146,7 @@ jobs:
         if: matrix.ruby-version == '.ruby-version'
         uses: romeovs/lcov-reporter-action@v0.2.16
         with:
-          lcov-file: ./coverage/mastodon.lcov
+          lcov-file: ./coverage/lcov/mastodon.lcov
           github-token: ${{ secrets.GITHUB_TOKEN }}
           delete-old-comments: true
 

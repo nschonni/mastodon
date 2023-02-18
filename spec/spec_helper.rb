@@ -2,7 +2,13 @@ GC.disable
 
 if ENV['DISABLE_SIMPLECOV'] != 'true'
   require 'simplecov'
-  require 'simplecov-lcov'
+
+  if ENV['CI'] == 'true'
+    require 'simplecov-lcov'
+    SimpleCov::Formatter::LcovFormatter.config.report_with_single_file = true
+    SimpleCov.formatter = SimpleCov::Formatter::LcovFormatter
+  end
+
   SimpleCov.start 'rails' do
     add_group 'Services', 'app/services'
     add_group 'Presenters', 'app/presenters'
