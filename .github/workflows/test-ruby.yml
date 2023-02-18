@@ -150,7 +150,7 @@ jobs:
           DISABLE_SIMPLECOV: false
 
       - name: Add code coverage comment
-        if: matrix.ruby-version != '.ruby-version'
+        if: matrix.ruby-version == '.ruby-version'
         uses: romeovs/lcov-reporter-action@v0.2.16
         with:
           lcov-file: ./coverage/lcov/ruby-simplecov.lcov
