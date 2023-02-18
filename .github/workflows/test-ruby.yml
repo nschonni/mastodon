@@ -8,8 +8,6 @@ env:
   BUNDLE_CLEAN: true
   BUNDLE_FROZEN: true
   BUNDLE_WITHOUT: 'development production'
-  BUNDLE_JOBS: 3
-  BUNDLE_RETRY: 3
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -144,12 +142,8 @@ jobs:
 
       - name: Add code coverage comment
         if: matrix.ruby-version == '.ruby-version'
-        uses: romeovs/lcov-reporter-action@v0.2.16
+        uses: romeovs/lcov-reporter-action@v0.3.1
         with:
           lcov-file: ./coverage/lcov/mastodon.lcov
           github-token: ${{ secrets.GITHUB_TOKEN }}
           delete-old-comments: true
-
-      - name: Debug
-        if: matrix.ruby-version == '.ruby-version'
-        run: ls coverage
