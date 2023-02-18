@@ -142,15 +142,16 @@ jobs:
         env:
           DISABLE_SIMPLECOV: ${{ matrix.ruby-version != '.ruby-version' }}
 
-      - name: Debug
-        if: matrix.ruby-version == '.ruby-version'
-        run: ls coverage/lcov
-        env:
-          DISABLE_SIMPLECOV: ${{ matrix.ruby-version != '.ruby-version' }}
-
       - name: Add code coverage comment
         if: matrix.ruby-version == '.ruby-version'
         uses: romeovs/lcov-reporter-action@v0.2.16
         with:
-          lcov-file: ./coverage/lcov/mastodon.lcov
+          lcov-file: ./coverage/mastodon.lcov
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          delete-old-comments: true
+
+      - name: Debug
+        if: matrix.ruby-version == '.ruby-version'
+        run: ls coverage
+        env:
+          DISABLE_SIMPLECOV: ${{ matrix.ruby-version != '.ruby-version' }}
