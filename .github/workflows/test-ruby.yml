@@ -153,5 +153,3 @@ jobs:
       - name: Debug
         if: matrix.ruby-version == '.ruby-version'
         run: ls coverage
-        env:
-          DISABLE_SIMPLECOV: ${{ matrix.ruby-version != '.ruby-version' }}
