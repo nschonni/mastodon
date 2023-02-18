@@ -89,7 +89,6 @@ jobs:
       DB_HOST: localhost
       DB_USER: postgres
       DB_PASS: postgres
-      DISABLE_SIMPLECOV: true
       RAILS_ENV: test
       ALLOW_NOPAM: true
       PAM_ENABLED: true
@@ -139,4 +138,20 @@ jobs:
         run: './bin/rails db:create db:schema:load db:seed'
 
       - name: Run RSpec
+        if: matrix.ruby-version != '.ruby-version'
         run: bundle exec rspec spec
+        env:
+          DISABLE_SIMPLECOV: true
+
+      - name: Run RSpec
+        if: matrix.ruby-version == '.ruby-version'
+        run: bundle exec rspec spec
+        env:
+          DISABLE_SIMPLECOV: false
+
+      - name: Add code coverage comment
+        if: matrix.ruby-version != '.ruby-version'
+        uses: romeovs/lcov-reporter-action@v0.2.16
+        with:
+          lcov-file: ./coverage/lcov/ruby-simplecov.lcov
+          github-token: ${{ secrets.GITHUB_TOKEN }}
