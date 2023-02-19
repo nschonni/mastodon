@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe UnsuspendAccountService, type: :service do
-  shared_examples 'common behavior' do
+  shared_context 'common behavior' do
     let!(:local_follower) { Fabricate(:user, current_sign_in_at: 1.hour.ago).account }
     let!(:list)           { Fabricate(:list, account: local_follower) }
 

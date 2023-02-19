@@ -1959,12 +1959,6 @@ RSpec/ScatteredSetup:
     - 'spec/services/activitypub/process_account_service_spec.rb'
     - 'spec/services/fetch_resource_service_spec.rb'
 
-# Offense count: 1
-# This cop supports safe autocorrection (--autocorrect).
-RSpec/SharedContext:
-  Exclude:
-    - 'spec/services/unsuspend_account_service_spec.rb'
-
 # Offense count: 16
 RSpec/StubbedMock:
   Exclude:
