@@ -97,6 +97,18 @@ Rails/Exit:
     - 'lib/mastodon/cli_helper.rb'
     - 'lib/cli.rb'
 
+RSpec/FilePath:
+  IgnoreMethods: true
+  CustomTransform:
+    {
+      'ActivityPub': 'activitypub',
+      'FetchOEmbedService': 'fetch_oembed_service',
+      'JsonLdHelper': 'jsonld_helper',
+      'NodeInfoController': 'nodeinfo_controller',
+      'OEmbed': 'oembed_controller',
+      'OStatus': 'ostatus',
+    }
+
 RSpec/NotToNot:
   EnforcedStyle: to_not
 
