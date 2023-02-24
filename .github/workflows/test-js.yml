@@ -40,4 +40,7 @@ jobs:
         run: yarn --frozen-lockfile
 
       - name: Jest testing
-        run: yarn test:jest --reporters github-actions summary
+        run: yarn test:jest:coverage --reporters github-actions summary
+
+      - name: Upload Code Coverage
+        uses: codecov/codecov-action@v3
