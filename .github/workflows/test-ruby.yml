@@ -129,5 +129,7 @@ jobs:
 
       - name: Load database schema
         run: bundle exec rake parallel:create parallel:load_schema parallel:seed
+        env:
+          PARALLEL_TEST_FIRST_IS_1: true
 
       - run: bundle exec turbo_tests
