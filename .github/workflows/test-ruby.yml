@@ -128,6 +128,6 @@ jobs:
         run: gem update --system
 
       - name: Load database schema
-        run: './bin/rails db:create db:schema:load db:seed'
+        run: bundle exec rake parallel:create parallel:schema:load parallel:seed
 
       - run: bundle exec turbo_tests
