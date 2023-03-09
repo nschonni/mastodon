@@ -121,7 +121,7 @@ group :test do
   gem 'json-schema', '~> 3.0'
   gem 'rack-test', '~> 2.0'
   gem 'rails-controller-testing', '~> 1.0'
-  gem 'rspec_junit_formatter', '~> 0.6'
+  gem 'rspec-github', '~> 2.4', require: false
   gem 'rspec-sidekiq', '~> 3.1'
   gem 'simplecov', '~> 0.22', require: false
   gem 'webmock', '~> 3.18'
