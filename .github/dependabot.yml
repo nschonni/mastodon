@@ -10,24 +10,18 @@ updates:
     schedule:
       interval: weekly
     open-pull-requests-limit: 99
-    allow:
-      - dependency-type: direct
 
   - package-ecosystem: bundler
     directory: '/'
     schedule:
       interval: weekly
     open-pull-requests-limit: 99
-    allow:
-      - dependency-type: direct
 
   - package-ecosystem: github-actions
     directory: '/'
     schedule:
       interval: weekly
     open-pull-requests-limit: 99
-    allow:
-      - dependency-type: direct
 
   - package-ecosystem: docker
     directory: '/'
