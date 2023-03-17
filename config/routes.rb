@@ -76,10 +76,10 @@ Rails.application.routes.draw do
 
   devise_for :users, path: 'auth', format: false, controllers: {
     omniauth_callbacks: 'auth/omniauth_callbacks',
-    sessions:           'auth/sessions',
-    registrations:      'auth/registrations',
-    passwords:          'auth/passwords',
-    confirmations:      'auth/confirmations',
+    sessions: 'auth/sessions',
+    registrations: 'auth/registrations',
+    passwords: 'auth/passwords',
+    confirmations: 'auth/confirmations',
   }
 
   get '/users/:username', to: redirect('/@%{username}'), constraints: lambda { |req| req.format.nil? || req.format.html? }
@@ -163,8 +163,8 @@ Rails.application.routes.draw do
     resource :otp_authentication, only: [:show, :create], controller: 'two_factor_authentication/otp_authentication'
 
     resources :webauthn_credentials, only: [:index, :new, :create, :destroy],
-              path: 'security_keys',
-              controller: 'two_factor_authentication/webauthn_credentials' do
+                                     path: 'security_keys',
+                                     controller: 'two_factor_authentication/webauthn_credentials' do
       collection do
         get :options
       end
