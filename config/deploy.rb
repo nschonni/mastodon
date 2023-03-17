@@ -14,8 +14,8 @@ append :linked_files, '.env.production', 'public/robots.txt'
 append :linked_dirs, 'vendor/bundle', 'node_modules', 'public/system'
 
 namespace :systemd do
-  %i[sidekiq streaming web].each do |service|
-    %i[reload restart status].each do |action|
+  %i(sidekiq streaming web).each do |service|
+    %i(reload restart status).each do |action|
       desc "Perform a #{action} on #{service} service"
       task "#{service}:#{action}".to_sym do
         on roles(:app) do
