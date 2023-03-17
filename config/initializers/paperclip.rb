@@ -70,7 +70,7 @@ if ENV['S3_ENABLED'] == 'true'
 
   if ENV['S3_PERMISSION'] == ''
     Paperclip::Attachment.default_options.merge!(
-      s3_permissions: ->(*) { nil }
+      s3_permissions: ->(*) {}
     )
   end
 
