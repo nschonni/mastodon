@@ -36,8 +36,8 @@ Rails.application.configure do
   config.force_ssl = true
   config.ssl_options = {
     redirect: {
-      exclude: ->(request) { request.path.start_with?('/health') || request.headers["Host"].end_with?('.onion') || request.headers["Host"].end_with?('.i2p') }
-    }
+      exclude: ->(request) { request.path.start_with?('/health') || request.headers["Host"].end_with?('.onion') || request.headers["Host"].end_with?('.i2p') },
+    },
   }
 
   # Use the lowest log level to ensure availability of diagnostic information
