@@ -2,9 +2,7 @@
 
 module AppendComponent
   def append(_wrapper_options = nil)
-    @append ||= begin
-      options[:append].to_s.html_safe if options[:append].present?
-    end
+    @append ||= (options[:append].to_s.html_safe if options[:append].present?)
   end
 end
 
