@@ -2586,18 +2586,6 @@ Style/StringConcatenation:
   Exclude:
     - 'config/initializers/paperclip.rb'
 
-# This cop supports safe autocorrection (--autocorrect).
-# Configuration parameters: EnforcedStyle, ConsistentQuotesInMultiline.
-# SupportedStyles: single_quotes, double_quotes
-Style/StringLiterals:
-  Exclude:
-    - 'config/environments/production.rb'
-    - 'config/initializers/backtrace_silencers.rb'
-    - 'config/initializers/http_client_proxy.rb'
-    - 'config/initializers/rack_attack.rb'
-    - 'config/initializers/webauthn.rb'
-    - 'config/routes.rb'
-
 # This cop supports unsafe autocorrection (--autocorrect-all).
 # Configuration parameters: AllowMethodsWithArguments, AllowedMethods, AllowedPatterns, AllowComments.
 # AllowedMethods: define_method, mail, respond_to
