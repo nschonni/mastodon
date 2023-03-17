@@ -1,3 +1,1 @@
-if ENV['FFMPEG_BINARY'].present?
-  FFMPEG.ffmpeg_binary = ENV['FFMPEG_BINARY']
-end
+FFMPEG.ffmpeg_binary = ENV['FFMPEG_BINARY'] if ENV['FFMPEG_BINARY'].present?

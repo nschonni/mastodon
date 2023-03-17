@@ -68,9 +68,7 @@ Rails.application.configure do
   config.lograge.enabled = true
 
   config.lograge.custom_payload do |controller|
-    if controller.respond_to?(:signed_request?) && controller.signed_request?
-      { key: controller.signature_key_id }
-    end
+    { key: controller.signature_key_id } if controller.respond_to?(:signed_request?) && controller.signed_request?
   end
 
   # Do not dump schema after migrations.

@@ -2351,13 +2351,6 @@ Style/IdenticalConditionalBranches:
   Exclude:
     - 'config/initializers/content_security_policy.rb'
 
-# This cop supports safe autocorrection (--autocorrect).
-Style/IfUnlessModifier:
-  Exclude:
-    - 'config/environments/production.rb'
-    - 'config/initializers/devise.rb'
-    - 'config/initializers/ffmpeg.rb'
-
 # This cop supports unsafe autocorrection (--autocorrect-all).
 # Configuration parameters: InverseMethods, InverseBlocks.
 Style/InverseMethods:
