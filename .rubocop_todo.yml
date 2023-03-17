@@ -13,12 +13,6 @@ Bundler/OrderedGems:
   Exclude:
     - 'Gemfile'
 
-# This cop supports safe autocorrection (--autocorrect).
-# Configuration parameters: AllowInHeredoc.
-Layout/TrailingWhitespace:
-  Exclude:
-    - 'config/initializers/paperclip.rb'
-
 # Configuration parameters: AllowedMethods, AllowedPatterns.
 Lint/AmbiguousBlockAssociation:
   Exclude:
