@@ -165,7 +165,6 @@ Rails.application.routes.draw do
     resources :webauthn_credentials, only: [:index, :new, :create, :destroy],
               path: 'security_keys',
               controller: 'two_factor_authentication/webauthn_credentials' do
-
       collection do
         get :options
       end
