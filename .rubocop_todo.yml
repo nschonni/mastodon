@@ -14,14 +14,6 @@ Bundler/OrderedGems:
     - 'Gemfile'
 
 # This cop supports safe autocorrection (--autocorrect).
-# Configuration parameters: EnforcedStyle, IndentationWidth.
-# SupportedStyles: with_first_argument, with_fixed_indentation
-Layout/ArgumentAlignment:
-  Exclude:
-    - 'config/initializers/cors.rb'
-    - 'config/initializers/session_store.rb'
-
-# This cop supports safe autocorrection (--autocorrect).
 # Configuration parameters: EnforcedStyle.
 # SupportedStyles: empty_lines, no_empty_lines
 Layout/EmptyLinesAroundBlockBody:
