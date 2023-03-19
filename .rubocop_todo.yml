@@ -245,7 +245,7 @@ Metrics/BlockNesting:
 
 # Configuration parameters: CountComments, CountAsOne.
 Metrics/ClassLength:
-  Max: 375
+  Max: 431
 
 # Configuration parameters: AllowedMethods, AllowedPatterns.
 Metrics/CyclomaticComplexity:
@@ -253,7 +253,7 @@ Metrics/CyclomaticComplexity:
 
 # Configuration parameters: CountComments, CountAsOne, AllowedMethods, AllowedPatterns.
 Metrics/MethodLength:
-  Max: 58
+  Max: 65
 
 # Configuration parameters: CountComments, Max, CountAsOne.
 Metrics/ModuleLength:
@@ -2716,9 +2716,3 @@ Style/TrailingCommaInHashLiteral:
 Style/WordArray:
   EnforcedStyle: percent
   MinSize: 6
-
-# This cop supports safe autocorrection (--autocorrect).
-# Configuration parameters: AllowHeredoc, AllowURI, URISchemes, IgnoreCopDirectives, AllowedPatterns.
-# URISchemes: http, https
-Layout/LineLength:
-  Max: 701

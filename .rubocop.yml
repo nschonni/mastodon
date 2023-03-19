@@ -31,11 +31,14 @@ AllCops:
 Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 
+# Reason: The Max default is 120, and this number should continue to approach that value
+# https://docs.rubocop.org/rubocop/cops_layout.html#layoutlinelength
 Layout/LineLength:
   AllowedPatterns:
     # Allow comments to be long lines
-    - !ruby/regexp / \# .*$/
-    - !ruby/regexp /^\# .*$/
+    - ' \# .*$'
+    - '^\# .*$'
+  Max: 300
   Exclude:
     - lib/**/*cli*.rb
     - db/*migrate/**/*
