@@ -94,14 +94,24 @@ class Status < ApplicationRecord
   scope :remote, -> { where(local: false).where.not(uri: nil) }
   scope :local,  -> { where(local: true).or(where(uri: nil)) }
   scope :with_accounts, ->(ids) { where(id: ids).includes(:account) }
-  scope :without_replies, -> { where('statuses.reply = FALSE OR statuses.in_reply_to_account_id = statuses.account_id') }
+  scope :without_replies, lambda {
+                            where('statuses.reply = FALSE OR statuses.in_reply_to_account_id = statuses.account_id')
+                          }
   scope :without_reblogs, -> { where(statuses: { reblog_of_id: nil }) }
   scope :with_public_visibility, -> { where(visibility: :public) }
   scope :tagged_with, ->(tag_ids) { joins(:statuses_tags).where(statuses_tags: { tag_id: tag_ids }) }
   scope :excluding_silenced_accounts, -> { left_outer_joins(:account).where(accounts: { silenced_at: nil }) }
   scope :including_silenced_accounts, -> { left_outer_joins(:account).where.not(accounts: { silenced_at: nil }) }
   scope :not_excluded_by_account, ->(account) { where.not(account_id: account.excluded_from_timeline_account_ids) }
-  scope :not_domain_blocked_by_account, ->(account) { account.excluded_from_timeline_domains.blank? ? left_outer_joins(:account) : left_outer_joins(:account).where('accounts.domain IS NULL OR accounts.domain NOT IN (?)', account.excluded_from_timeline_domains) }
+  scope :not_domain_blocked_by_account, lambda { |account|
+                                          if account.excluded_from_timeline_domains.blank?
+                                            left_outer_joins(:account)
+                                          else
+                                            left_outer_joins(:account)
+                                              .where('accounts.domain IS NULL OR accounts.domain NOT IN (?)',
+                                                     account.excluded_from_timeline_domains)
+                                          end
+                                        }
   scope :tagged_with_all, lambda { |tag_ids|
     Array(tag_ids).map(&:to_i).reduce(self) do |result, id|
       result.joins("INNER JOIN statuses_tags t#{id} ON t#{id}.status_id = statuses.id AND t#{id}.tag_id = #{id}")
@@ -329,23 +339,44 @@ class Status < ApplicationRecord
     end
 
     def favourites_map(status_ids, account_id)
-      Favourite.select('status_id').where(status_id: status_ids).where(account_id: account_id).each_with_object({}) { |f, h| h[f.status_id] = true }
+      Favourite.select('status_id')
+               .where(status_id: status_ids)
+               .where(account_id: account_id)
+               .each_with_object({}) do |f, h|
+        h[f.status_id] = true
+      end
     end
 
     def bookmarks_map(status_ids, account_id)
-      Bookmark.select('status_id').where(status_id: status_ids).where(account_id: account_id).map { |f| [f.status_id, true] }.to_h
+      Bookmark.select('status_id').where(status_id: status_ids).where(account_id: account_id).map do |f|
+        [f.status_id, true]
+      end.to_h
     end
 
     def reblogs_map(status_ids, account_id)
-      unscoped.select('reblog_of_id').where(reblog_of_id: status_ids).where(account_id: account_id).each_with_object({}) { |s, h| h[s.reblog_of_id] = true }
+      unscoped.select('reblog_of_id')
+              .where(reblog_of_id: status_ids)
+              .where(account_id: account_id)
+              .each_with_object({}) do |s, h|
+        h[s.reblog_of_id] = true
+      end
     end
 
     def mutes_map(conversation_ids, account_id)
-      ConversationMute.select('conversation_id').where(conversation_id: conversation_ids).where(account_id: account_id).each_with_object({}) { |m, h| h[m.conversation_id] = true }
+      ConversationMute.select('conversation_id')
+                      .where(conversation_id: conversation_ids)
+                      .where(account_id: account_id)
+                      .each_with_object({}) do |m, h|
+        h[m.conversation_id] = true
+      end
     end
 
     def pins_map(status_ids, account_id)
-      StatusPin.select('status_id').where(status_id: status_ids).where(account_id: account_id).each_with_object({}) { |p, h| h[p.status_id] = true }
+      StatusPin.select('status_id')
+               .where(status_id: status_ids)
+               .where(account_id: account_id).each_with_object({}) do |p, h|
+        h[p.status_id] = true
+      end
     end
 
     def reload_stale_associations!(cached_items)
@@ -408,7 +439,10 @@ class Status < ApplicationRecord
       # Since we are using SELECT instead of VALUES, a non-error `nil` return is possible.
       # For our purposes, it's equivalent to a foreign key constraint violation
       result = connection.insert(im, "#{self} Create", primary_key || false, primary_key_value)
-      raise ActiveRecord::InvalidForeignKey, "(reblog_of_id)=(#{values['reblog_of_id']}) is not present in table \"statuses\"" if result.nil?
+      if result.nil?
+        raise ActiveRecord::InvalidForeignKey,
+              "(reblog_of_id)=(#{values['reblog_of_id']}) is not present in table \"statuses\""
+      end
 
       result
     else
@@ -446,7 +480,11 @@ class Status < ApplicationRecord
 
   def discard_with_reblogs
     discard_time = Time.current
-    Status.unscoped.where(reblog_of_id: id, deleted_at: [nil, deleted_at]).in_batches.update_all(deleted_at: discard_time) unless reblog?
+    unless reblog?
+      Status.unscoped.where(reblog_of_id: id,
+                            deleted_at: [nil,
+                                         deleted_at]).in_batches.update_all(deleted_at: discard_time)
+    end
     update_attribute(:deleted_at, discard_time)
   end
 
