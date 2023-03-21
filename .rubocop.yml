@@ -38,7 +38,7 @@ Layout/LineLength:
     # Allow comments to be long lines
     - ' \# .*$'
     - '^\# .*$'
-  Max: 300
+  Max: 250
   Exclude:
     - lib/**/*cli*.rb
     - db/*migrate/**/*

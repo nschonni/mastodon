@@ -27,7 +27,10 @@ class ImportService < BaseService
 
   def import_follows!
     parse_import_data!(['Account address'])
-    import_relationships!('follow', 'unfollow', @account.following, ROWS_PROCESSING_LIMIT, reblogs: { header: 'Show boosts', default: true }, notify: { header: 'Notify on new posts', default: false }, languages: { header: 'Languages', default: nil })
+    import_relationships!('follow', 'unfollow', @account.following, ROWS_PROCESSING_LIMIT,
+                          reblogs: { header: 'Show boosts', default: true },
+                          notify: { header: 'Notify on new posts', default: false },
+                          languages: { header: 'Languages', default: nil })
   end
 
   def import_blocks!
@@ -37,7 +40,8 @@ class ImportService < BaseService
 
   def import_mutes!
     parse_import_data!(['Account address'])
-    import_relationships!('mute', 'unmute', @account.muting, ROWS_PROCESSING_LIMIT, notifications: { header: 'Hide notifications', default: true })
+    import_relationships!('mute', 'unmute', @account.muting, ROWS_PROCESSING_LIMIT,
+                          notifications: { header: 'Hide notifications', default: true })
   end
 
   def import_domain_blocks!

@@ -62,12 +62,24 @@ class Form::AdminSettings
   attr_accessor(*KEYS)
 
   validates :registrations_mode, inclusion: { in: %w(open approved none) }, if: -> { defined?(@registrations_mode) }
-  validates :site_contact_email, :site_contact_username, presence: true, if: -> { defined?(@site_contact_username) || defined?(@site_contact_email) }
+  validates :site_contact_email, :site_contact_username, presence: true, if: lambda {
+                                                                               defined?(@site_contact_username) || defined?(@site_contact_email)
+                                                                             }
   validates :site_contact_username, existing_username: true, if: -> { defined?(@site_contact_username) }
-  validates :bootstrap_timeline_accounts, existing_username: { multiple: true }, if: -> { defined?(@bootstrap_timeline_accounts) }
+  validates :bootstrap_timeline_accounts, existing_username: { multiple: true }, if: lambda {
+                                                                                       defined?(@bootstrap_timeline_accounts)
+                                                                                     }
   validates :show_domain_blocks, inclusion: { in: %w(disabled users all) }, if: -> { defined?(@show_domain_blocks) }
-  validates :show_domain_blocks_rationale, inclusion: { in: %w(disabled users all) }, if: -> { defined?(@show_domain_blocks_rationale) }
-  validates :media_cache_retention_period, :content_cache_retention_period, :backups_retention_period, numericality: { only_integer: true }, allow_blank: true, if: -> { defined?(@media_cache_retention_period) || defined?(@content_cache_retention_period) || defined?(@backups_retention_period) }
+  validates :show_domain_blocks_rationale, inclusion: { in: %w(disabled users all) }, if: lambda {
+                                                                                            defined?(@show_domain_blocks_rationale)
+                                                                                          }
+  validates :media_cache_retention_period, :content_cache_retention_period, :backups_retention_period,
+            numericality: { only_integer: true }, allow_blank: true,
+            if: lambda {
+                  defined?(@media_cache_retention_period) ||
+                    defined?(@content_cache_retention_period) ||
+                    defined?(@backups_retention_period)
+                }
   validates :site_short_description, length: { maximum: 200 }, if: -> { defined?(@site_short_description) }
   validates :status_page_url, url: true, allow_blank: true
   validate :validate_site_uploads
