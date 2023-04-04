@@ -44,6 +44,8 @@ jobs:
         run: yarn --frozen-lockfile
 
       - name: Stylelint
+        env:
+          FORCE_COLOR: 0
         run: |
           echo "::add-matcher::.github/stylelint-matcher.json"
           yarn test:lint:sass
