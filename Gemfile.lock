@@ -199,7 +199,7 @@ GEM
     css_parser (1.12.0)
       addressable
     date (3.3.3)
-    debug_inspector (1.0.0)
+    debug_inspector (1.1.0)
     devise (4.9.2)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -599,8 +599,6 @@ GEM
       sidekiq (>= 2.4.0)
     rspec-support (3.12.0)
     rspec_chunked (0.6)
-    rspec_junit_formatter (0.6.0)
-      rspec-core (>= 2, < 4, != 2.12.0)
     rubocop (1.49.0)
       json (~> 2.3)
       parallel (~> 1.10)
@@ -862,7 +860,6 @@ DEPENDENCIES
   rspec-rails (~> 6.0)
   rspec-sidekiq (~> 3.1)
   rspec_chunked (~> 0.6)
-  rspec_junit_formatter (~> 0.6)
   rubocop
   rubocop-capybara
   rubocop-performance
