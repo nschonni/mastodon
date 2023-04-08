@@ -39,6 +39,8 @@ jobs:
         with:
           ruby-version: .ruby-version
           bundler-cache: true
+        env:
+          BUNDLE_WITH: 'development'
 
       - name: Run haml-lint
         run: |

@@ -38,6 +38,8 @@ jobs:
         with:
           ruby-version: .ruby-version
           bundler-cache: true
+        env:
+          BUNDLE_WITH: 'development'
 
       - name: Set-up RuboCop Problem Matcher
         uses: r7kamura/rubocop-problem-matchers-action@v1

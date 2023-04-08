@@ -6,11 +6,6 @@ on:
       - 'dependabot/**'
   pull_request:
 
-env:
-  BUNDLE_CLEAN: true
-  BUNDLE_FROZEN: true
-  BUNDLE_WITHOUT: 'development production'
-
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -20,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      RAILS_ENV: test
+      RAILS_ENV: production
 
     steps:
       - uses: actions/checkout@v3
@@ -41,6 +36,8 @@ jobs:
         with:
           ruby-version: .ruby-version
           bundler-cache: true
+        env:
+          BUNDLE_WITH: 'production'
 
       - run: yarn --frozen-lockfile --production
       - name: Precompile assets
@@ -91,13 +88,11 @@ jobs:
       DB_HOST: localhost
       DB_USER: postgres
       DB_PASS: postgres
-      DISABLE_SIMPLECOV: true
       RAILS_ENV: test
       ALLOW_NOPAM: true
       PAM_ENABLED: true
       PAM_DEFAULT_SERVICE: pam_test
       PAM_CONTROLLED_SERVICE: pam_test_controlled
-      BUNDLE_WITH: 'pam_authentication'
       CI_JOBS: ${{ matrix.ci_job }}/4
 
     strategy:
@@ -135,6 +130,8 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby-version}}
           bundler-cache: true
+        env:
+          BUNDLE_WITH: 'test pam_authentication'
 
       - name: Update system gems
         if: matrix.ruby-version == '2.7'
