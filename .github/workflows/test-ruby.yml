@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      RAILS_ENV: production
+      RAILS_ENV: test
       OTP_SECRET: precompile_placeholder
       SECRET_KEY_BASE: precompile_placeholder
 
@@ -39,7 +39,7 @@ jobs:
           ruby-version: .ruby-version
           bundler-cache: true
         env:
-          BUNDLE_WITH: 'production'
+          BUNDLE_WITH: 'production test'
 
       - run: yarn --frozen-lockfile --production
       - name: Precompile assets
