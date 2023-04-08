@@ -16,6 +16,7 @@ jobs:
 
     env:
       RAILS_ENV: production
+      OTP_SECRET: precompile_placeholder
 
     steps:
       - uses: actions/checkout@v3

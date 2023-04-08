@@ -51,6 +51,7 @@ jobs:
       DB_USER: postgres
       DB_PASS: postgres
       RAILS_ENV: production
+      OTP_SECRET: migration_placeholder
 
     steps:
       - uses: actions/checkout@v3
