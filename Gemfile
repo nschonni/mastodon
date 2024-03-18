@@ -139,7 +139,7 @@ group :test do
   gem 'simplecov-lcov', '~> 0.8', require: false
 
   # Stub web requests for specs
-  gem 'webmock', '~> 3.18'
+  gem 'webmock', '~> 3.23'
 end
 
 group :development do
