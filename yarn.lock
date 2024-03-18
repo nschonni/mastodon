@@ -2351,7 +2351,7 @@ __metadata:
     classnames: "npm:^2.3.2"
     cocoon-js-vanilla: "npm:^1.3.0"
     color-blend: "npm:^4.0.0"
-    compression-webpack-plugin: "npm:^6.1.2"
+    compression-webpack-plugin: "npm:^11.1.0"
     core-js: "npm:^3.30.2"
     cross-env: "npm:^7.0.3"
     css-loader: "npm:^5.2.7"
@@ -3190,6 +3190,13 @@ __metadata:
   version: 7.0.14
   resolution: "@types/json-schema@npm:7.0.14"
   checksum: 10c0/da68689ccd44cb93ca4c9a4af3b25c6091ecf45fb370d1ed0d0ac5b780e235bf0b9bdc1f7e28f19e6713b22567c3db11fefcbcc6d48ac6b356d035a8f9f4ea30
+  languageName: node
+  linkType: hard
+
+"@types/json-schema@npm:^7.0.9":
+  version: 7.0.15
+  resolution: "@types/json-schema@npm:7.0.15"
+  checksum: 10c0/a996a745e6c5d60292f36731dd41341339d4eeed8180bb09226e5c8d23759067692b1d88e5d91d72ee83dfc00d3aca8e7bd43ea120516c17922cbcb7c3e252db
   languageName: node
   linkType: hard
 
@@ -4144,12 +4151,37 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ajv-formats@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "ajv-formats@npm:2.1.1"
+  dependencies:
+    ajv: "npm:^8.0.0"
+  peerDependencies:
+    ajv: ^8.0.0
+  peerDependenciesMeta:
+    ajv:
+      optional: true
+  checksum: 10c0/e43ba22e91b6a48d96224b83d260d3a3a561b42d391f8d3c6d2c1559f9aa5b253bfb306bc94bbeca1d967c014e15a6efe9a207309e95b3eaae07fcbcdc2af662
+  languageName: node
+  linkType: hard
+
 "ajv-keywords@npm:^3.1.0, ajv-keywords@npm:^3.4.1, ajv-keywords@npm:^3.5.2":
   version: 3.5.2
   resolution: "ajv-keywords@npm:3.5.2"
   peerDependencies:
     ajv: ^6.9.1
   checksum: 10c0/0c57a47cbd656e8cdfd99d7c2264de5868918ffa207c8d7a72a7f63379d4333254b2ba03d69e3c035e996a3fd3eb6d5725d7a1597cca10694296e32510546360
+  languageName: node
+  linkType: hard
+
+"ajv-keywords@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "ajv-keywords@npm:5.1.0"
+  dependencies:
+    fast-deep-equal: "npm:^3.1.3"
+  peerDependencies:
+    ajv: ^8.8.2
+  checksum: 10c0/18bec51f0171b83123ba1d8883c126e60c6f420cef885250898bf77a8d3e65e3bfb9e8564f497e30bdbe762a83e0d144a36931328616a973ee669dc74d4a9590
   languageName: node
   linkType: hard
 
@@ -4165,7 +4197,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv@npm:^8.0.1, ajv@npm:^8.6.0":
+"ajv@npm:^8.0.0, ajv@npm:^8.0.1, ajv@npm:^8.6.0, ajv@npm:^8.9.0":
   version: 8.12.0
   resolution: "ajv@npm:8.12.0"
   dependencies:
@@ -5804,18 +5836,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"compression-webpack-plugin@npm:^6.1.2":
-  version: 6.1.2
-  resolution: "compression-webpack-plugin@npm:6.1.2"
+"compression-webpack-plugin@npm:^11.1.0":
+  version: 11.1.0
+  resolution: "compression-webpack-plugin@npm:11.1.0"
   dependencies:
-    cacache: "npm:^15.0.5"
-    find-cache-dir: "npm:^3.3.1"
-    schema-utils: "npm:^3.0.0"
-    serialize-javascript: "npm:^5.0.1"
-    webpack-sources: "npm:^1.4.3"
+    schema-utils: "npm:^4.2.0"
+    serialize-javascript: "npm:^6.0.2"
   peerDependencies:
-    webpack: ^4.0.0 || ^5.0.0
-  checksum: 10c0/966b1417bbeaa55af8d4b7911cf4435a187adbaaff34d3e9f2ef2b7ff747877469ff965d5b653a2211eaecfd0ce8b3c834d3a8f5519aa15dd79e68bbfea0b69e
+    webpack: ^5.1.0
+  checksum: 10c0/387043d1e7dd776768bbc92071953ae0459891337f1ca908c0b4c9fe98322caf19847fae3713876e3976d894599712f784ccf13baa6d1c64ecb915786a54f2ec
   languageName: node
   linkType: hard
 
@@ -14580,6 +14609,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"schema-utils@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "schema-utils@npm:4.2.0"
+  dependencies:
+    "@types/json-schema": "npm:^7.0.9"
+    ajv: "npm:^8.9.0"
+    ajv-formats: "npm:^2.1.1"
+    ajv-keywords: "npm:^5.1.0"
+  checksum: 10c0/8dab7e7800316387fd8569870b4b668cfcecf95ac551e369ea799bbcbfb63fb0365366d4b59f64822c9f7904d8c5afcfaf5a6124a4b08783e558cd25f299a6b4
+  languageName: node
+  linkType: hard
+
 "scroll-behavior@npm:^0.9.1":
   version: 0.9.12
   resolution: "scroll-behavior@npm:0.9.12"
@@ -14678,6 +14719,15 @@ __metadata:
   dependencies:
     randombytes: "npm:^2.1.0"
   checksum: 10c0/646bd92a8298d764d38316f3006bce0b0def6d0e254791396ac34403847654d9346b0b6ed7865efd799d93d4c47d900e08a8fa7a6f7f8d2dbaebab5444c3b431
+  languageName: node
+  linkType: hard
+
+"serialize-javascript@npm:^6.0.2":
+  version: 6.0.2
+  resolution: "serialize-javascript@npm:6.0.2"
+  dependencies:
+    randombytes: "npm:^2.1.0"
+  checksum: 10c0/2dd09ef4b65a1289ba24a788b1423a035581bef60817bea1f01eda8e3bda623f86357665fe7ac1b50f6d4f583f97db9615b3f07b2a2e8cbcb75033965f771dd2
   languageName: node
   linkType: hard
 
