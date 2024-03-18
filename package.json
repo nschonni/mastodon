@@ -84,7 +84,7 @@
     "lodash": "^4.17.21",
     "mark-loader": "^0.1.6",
     "marky": "^1.2.5",
-    "mini-css-extract-plugin": "^1.6.2",
+    "mini-css-extract-plugin": "^2.8.1",
     "path-complete-extname": "^1.0.0",
     "postcss": "^8.4.24",
     "postcss-loader": "^4.3.0",
