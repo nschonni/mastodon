@@ -10,7 +10,7 @@ gem 'thor', '~> 1.2'
 gem 'rack', '~> 2.2.7'
 
 # For why irb is in the Gemfile, see: https://ruby.social/@st0012/111444685161478182
-gem 'irb', '~> 1.8'
+gem 'irb', '~> 1.12'
 
 gem 'haml-rails', '~>2.0'
 gem 'pg', '~> 1.5'
