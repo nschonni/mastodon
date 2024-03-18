@@ -2378,7 +2378,7 @@ __metadata:
     http-link-header: "npm:^1.1.1"
     husky: "npm:^9.0.11"
     immutable: "npm:^4.3.0"
-    imports-loader: "npm:^1.2.0"
+    imports-loader: "npm:^5.0.0"
     intl-messageformat: "npm:^10.3.5"
     jest: "npm:^29.5.0"
     jest-environment-jsdom: "npm:^29.5.0"
@@ -9079,17 +9079,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"imports-loader@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "imports-loader@npm:1.2.0"
+"imports-loader@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "imports-loader@npm:5.0.0"
   dependencies:
-    loader-utils: "npm:^2.0.0"
-    schema-utils: "npm:^3.0.0"
-    source-map: "npm:^0.6.1"
+    source-map-js: "npm:^1.0.2"
     strip-comments: "npm:^2.0.1"
   peerDependencies:
-    webpack: ^4.0.0 || ^5.0.0
-  checksum: 10c0/b77a0016808ebe6e5eec083a3afb94879b03653922dd4bc2b9c9aae13093e804d4089f7da171d1395f78d357de581ca3a4aea9100293dcbe02cf6c1e861085bf
+    webpack: ^5.0.0
+  checksum: 10c0/909fba40b8ebcf56933d19343874373ca87dd1a1d7c73a3068c04aaea791f787219d90820c3ed6f0637f1b7a865a586b8e02c588915ce34a236f73e143683569
   languageName: node
   linkType: hard
 
