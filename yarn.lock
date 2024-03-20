@@ -2802,7 +2802,7 @@ __metadata:
     mini-css-extract-plugin: "npm:^1.6.2"
     path-complete-extname: "npm:^1.0.0"
     postcss: "npm:^8.4.24"
-    postcss-loader: "npm:^4.3.0"
+    postcss-loader: "npm:^8.1.1"
     postcss-preset-env: "npm:^9.5.2"
     prettier: "npm:^3.0.0"
     prop-types: "npm:^15.8.1"
@@ -10825,6 +10825,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jiti@npm:^1.20.0":
+  version: 1.21.0
+  resolution: "jiti@npm:1.21.0"
+  bin:
+    jiti: bin/jiti.js
+  checksum: 10c0/7f361219fe6c7a5e440d5f1dba4ab763a5538d2df8708cdc22561cf25ea3e44b837687931fca7cdd8cdd9f567300e90be989dd1321650045012d8f9ed6aab07f
+  languageName: node
+  linkType: hard
+
 "joycon@npm:^3.1.1":
   version: 3.1.1
   resolution: "joycon@npm:3.1.1"
@@ -13353,19 +13362,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-loader@npm:^4.3.0":
-  version: 4.3.0
-  resolution: "postcss-loader@npm:4.3.0"
+"postcss-loader@npm:^8.1.1":
+  version: 8.1.1
+  resolution: "postcss-loader@npm:8.1.1"
   dependencies:
-    cosmiconfig: "npm:^7.0.0"
-    klona: "npm:^2.0.4"
-    loader-utils: "npm:^2.0.0"
-    schema-utils: "npm:^3.0.0"
-    semver: "npm:^7.3.4"
+    cosmiconfig: "npm:^9.0.0"
+    jiti: "npm:^1.20.0"
+    semver: "npm:^7.5.4"
   peerDependencies:
+    "@rspack/core": 0.x || 1.x
     postcss: ^7.0.0 || ^8.0.1
-    webpack: ^4.0.0 || ^5.0.0
-  checksum: 10c0/3405584e571ec4d66d7c2b665a2a4823eaa7208433fd40eb6b669ac441f23398bc81fc18fe631c7d7805a303ad31f284a5066c4097dd082c1faba7edf13db8aa
+    webpack: ^5.0.0
+  peerDependenciesMeta:
+    "@rspack/core":
+      optional: true
+    webpack:
+      optional: true
+  checksum: 10c0/86cde94cd4c7c39892ef9bd4bf09342f422a21789654038694cf2b23c37c0ed9550c73608f656426a6631f0ade1eca82022781831e93d5362afe2f191388b85e
   languageName: node
   linkType: hard
 
@@ -15418,7 +15431,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.5.3, semver@npm:^7.5.4, semver@npm:^7.6.0":
+"semver@npm:^7.3.2, semver@npm:^7.3.5, semver@npm:^7.5.3, semver@npm:^7.5.4, semver@npm:^7.6.0":
   version: 7.6.0
   resolution: "semver@npm:7.6.0"
   dependencies:
