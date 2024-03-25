@@ -2191,9 +2191,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@formatjs/cli@npm:^6.1.1":
-  version: 6.2.7
-  resolution: "@formatjs/cli@npm:6.2.7"
+"@formatjs/cli@npm:^6.2.8":
+  version: 6.2.8
+  resolution: "@formatjs/cli@npm:6.2.8"
   peerDependencies:
     vue: ^3.3.4
   peerDependenciesMeta:
@@ -2201,7 +2201,7 @@ __metadata:
       optional: true
   bin:
     formatjs: bin/formatjs
-  checksum: 10c0/ee7b0873a734e02721ce1ee107ee60845bb30855f4ca686bfb6c5e9862353249d5d20748b18db93200aabc7a59875ff062f485c64d41cb8e61f1d43e2bb5eceb
+  checksum: 10c0/5d8f95434f4522eee7dd3acf54e5265289ec7e72812448cd7c7547bdedaba8927719800dfa2fc92fb82c609f34255367a80d18bf6c064540d5e11ec6b9d4603e
   languageName: node
   linkType: hard
 
@@ -2710,7 +2710,7 @@ __metadata:
     "@babel/preset-react": "npm:^7.22.3"
     "@babel/preset-typescript": "npm:^7.21.5"
     "@babel/runtime": "npm:^7.22.3"
-    "@formatjs/cli": "npm:^6.1.1"
+    "@formatjs/cli": "npm:^6.2.8"
     "@formatjs/intl-pluralrules": "npm:^5.2.2"
     "@gamestdio/websocket": "npm:^0.3.2"
     "@github/webauthn-json": "npm:^2.1.1"
