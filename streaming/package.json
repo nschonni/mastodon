@@ -23,7 +23,7 @@
     "ioredis": "^5.3.2",
     "jsdom": "^24.0.0",
     "pg": "^8.5.0",
-    "pg-connection-string": "^2.6.0",
+    "pg-connection-string": "^2.6.3",
     "pino": "^8.17.2",
     "pino-http": "^9.0.0",
     "prom-client": "^15.0.0",
