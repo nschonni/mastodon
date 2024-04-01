@@ -159,7 +159,7 @@ group :development do
   gem 'binding_of_caller', '~> 1.0'
 
   # Preview mail in the browser
-  gem 'letter_opener', '~> 1.8'
+  gem 'letter_opener', '~> 1.10'
   gem 'letter_opener_web', '~> 2.0'
 
   # Security analysis CLI tools
