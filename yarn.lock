@@ -2872,7 +2872,7 @@ __metadata:
     wicg-inert: "npm:^3.1.2"
     workbox-expiration: "npm:^7.0.0"
     workbox-precaching: "npm:^7.0.0"
-    workbox-routing: "npm:^7.0.0"
+    workbox-routing: "npm:^7.1.0"
     workbox-strategies: "npm:^7.0.0"
     workbox-webpack-plugin: "npm:^7.0.0"
     workbox-window: "npm:^7.0.0"
@@ -18026,6 +18026,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"workbox-core@npm:7.1.0":
+  version: 7.1.0
+  resolution: "workbox-core@npm:7.1.0"
+  checksum: 10c0/fb0b6e23a52e085da00b7a74b1f1854f06c695eb2bd4c244aa335165f59156a4febb4f116b9893b9fb7e0e8bac092d32eecceb4d00f930a93f64737cb2be9531
+  languageName: node
+  linkType: hard
+
 "workbox-expiration@npm:7.0.0, workbox-expiration@npm:^7.0.0":
   version: 7.0.0
   resolution: "workbox-expiration@npm:7.0.0"
@@ -18091,12 +18098,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workbox-routing@npm:7.0.0, workbox-routing@npm:^7.0.0":
+"workbox-routing@npm:7.0.0":
   version: 7.0.0
   resolution: "workbox-routing@npm:7.0.0"
   dependencies:
     workbox-core: "npm:7.0.0"
   checksum: 10c0/74ad651a0643506cfd3ca51eee754f5fe34e3f1460e6b772ed213e0422028cf002d70f91da32d13261bc5ee2160527ffb5436ac209fdbe8d0e7071784aa65190
+  languageName: node
+  linkType: hard
+
+"workbox-routing@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "workbox-routing@npm:7.1.0"
+  dependencies:
+    workbox-core: "npm:7.1.0"
+  checksum: 10c0/efd630fff594bd50276770840bce274660972587e79c097a9f1a84e8347351736aac13f11c6d7655ff550b13195d370d5c3b81a075bf452f358fc144ee868ad9
   languageName: node
   linkType: hard
 
