@@ -2839,7 +2839,7 @@ __metadata:
     react-overlays: "npm:^5.2.1"
     react-redux: "npm:^9.0.4"
     react-redux-loading-bar: "npm:^5.0.8"
-    react-router: "npm:^5.3.4"
+    react-router: "npm:^6.23.0"
     react-router-dom: "npm:^5.3.4"
     react-router-scroll-4: "npm:^1.0.0-beta.1"
     react-select: "npm:^5.7.3"
@@ -3041,6 +3041,13 @@ __metadata:
     react-redux:
       optional: true
   checksum: 10c0/f10f2c8f4b6c5c7a65d8d60246bdfde86b6cd2f542210ebdda8002223c7f4e99ed32964825e63f37345d9d12532671150fcec2809a40690931ae44afe8aba7f8
+  languageName: node
+  linkType: hard
+
+"@remix-run/router@npm:1.16.0":
+  version: 1.16.0
+  resolution: "@remix-run/router@npm:1.16.0"
+  checksum: 10c0/234e66b4d7266aff6d111a43f5560f00ffdc91de0b5cd447f1fdf1de1a8b3a6ac326eb52302356e23b095e71a8f4da914e40239af5f121de2ec2994f101b8db0
   languageName: node
   linkType: hard
 
@@ -14440,7 +14447,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-router@npm:5.3.4, react-router@npm:^5.3.4":
+"react-router@npm:5.3.4":
   version: 5.3.4
   resolution: "react-router@npm:5.3.4"
   dependencies:
@@ -14456,6 +14463,17 @@ __metadata:
   peerDependencies:
     react: ">=15"
   checksum: 10c0/e15c00dfef199249b4c6e6d98e5e76cc352ce66f3270f13df37cc069ddf7c05e43281e8c308fc407e4435d72924373baef1d2890e0f6b0b1eb423cf47315a053
+  languageName: node
+  linkType: hard
+
+"react-router@npm:^6.23.0":
+  version: 6.23.0
+  resolution: "react-router@npm:6.23.0"
+  dependencies:
+    "@remix-run/router": "npm:1.16.0"
+  peerDependencies:
+    react: ">=16.8"
+  checksum: 10c0/567eb764d0814a9af2ea83c7d0bcf8a0a49d7070b4a7fffbbe8a4e4a376ca4e6adaa762b47760b110993eb2773fc617da7e26ab564d59cfd768130671a1b990e
   languageName: node
   linkType: hard
 
