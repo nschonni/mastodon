@@ -2873,7 +2873,7 @@ __metadata:
     workbox-expiration: "npm:^7.0.0"
     workbox-precaching: "npm:^7.0.0"
     workbox-routing: "npm:^7.0.0"
-    workbox-strategies: "npm:^7.0.0"
+    workbox-strategies: "npm:^7.1.0"
     workbox-webpack-plugin: "npm:^7.0.0"
     workbox-window: "npm:^7.0.0"
   peerDependenciesMeta:
@@ -18026,6 +18026,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"workbox-core@npm:7.1.0":
+  version: 7.1.0
+  resolution: "workbox-core@npm:7.1.0"
+  checksum: 10c0/fb0b6e23a52e085da00b7a74b1f1854f06c695eb2bd4c244aa335165f59156a4febb4f116b9893b9fb7e0e8bac092d32eecceb4d00f930a93f64737cb2be9531
+  languageName: node
+  linkType: hard
+
 "workbox-expiration@npm:7.0.0, workbox-expiration@npm:^7.0.0":
   version: 7.0.0
   resolution: "workbox-expiration@npm:7.0.0"
@@ -18100,12 +18107,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workbox-strategies@npm:7.0.0, workbox-strategies@npm:^7.0.0":
+"workbox-strategies@npm:7.0.0":
   version: 7.0.0
   resolution: "workbox-strategies@npm:7.0.0"
   dependencies:
     workbox-core: "npm:7.0.0"
   checksum: 10c0/4fe122b80e547b347bedf187aeb2c2eb34efc3fbde2733b7709530cccb6b6e03b29adcbccecf301e4fcaad0d5cd4a74e1e704f769d949c32439dca358130a613
+  languageName: node
+  linkType: hard
+
+"workbox-strategies@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "workbox-strategies@npm:7.1.0"
+  dependencies:
+    workbox-core: "npm:7.1.0"
+  checksum: 10c0/b08712a69b1b13e354345cc228c29f0c759043f7ca7cf6ce9b82fe79c9d423142bfa4a118f91f1a57054047a730127fa4474d59d9306fb2ed42fe9ef568be01a
   languageName: node
   linkType: hard
 
