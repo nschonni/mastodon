@@ -101,7 +101,7 @@
     "react-motion": "^0.5.2",
     "react-notification": "^6.8.5",
     "react-overlays": "^5.2.1",
-    "react-redux": "^9.0.4",
+    "react-redux": "^9.1.2",
     "react-redux-loading-bar": "^5.0.8",
     "react-router": "^5.3.4",
     "react-router-dom": "^5.3.4",
