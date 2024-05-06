@@ -2811,7 +2811,7 @@ __metadata:
     husky: "npm:^9.0.11"
     immutable: "npm:^4.3.0"
     imports-loader: "npm:^1.2.0"
-    intl-messageformat: "npm:^10.3.5"
+    intl-messageformat: "npm:^10.5.12"
     jest: "npm:^29.5.0"
     jest-environment-jsdom: "npm:^29.5.0"
     js-yaml: "npm:^4.1.0"
@@ -9567,7 +9567,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"intl-messageformat@npm:10.5.11, intl-messageformat@npm:^10.3.5":
+"intl-messageformat@npm:10.5.11":
   version: 10.5.11
   resolution: "intl-messageformat@npm:10.5.11"
   dependencies:
@@ -9576,6 +9576,18 @@ __metadata:
     "@formatjs/icu-messageformat-parser": "npm:2.7.6"
     tslib: "npm:^2.4.0"
   checksum: 10c0/423f1c879ce2d0e7b9e0b4c1787a81ead7fe4d1734e0366a20fef56b06c09146e7ca3618e2e78b4f8b8f2b59cafe6237ceed21530fe0c16cfb47d915fc80222d
+  languageName: node
+  linkType: hard
+
+"intl-messageformat@npm:^10.5.12":
+  version: 10.5.12
+  resolution: "intl-messageformat@npm:10.5.12"
+  dependencies:
+    "@formatjs/ecma402-abstract": "npm:1.18.2"
+    "@formatjs/fast-memoize": "npm:2.2.0"
+    "@formatjs/icu-messageformat-parser": "npm:2.7.6"
+    tslib: "npm:^2.4.0"
+  checksum: 10c0/f95734e98a05ef7f51de0c27904d3a994528e3a174963bd1b3a6db9416b5fd84bbd8f7d26d84fc547d51af69ccf46dd3f73a3f4f20a2ccef5c9cd90e946ad82c
   languageName: node
   linkType: hard
 

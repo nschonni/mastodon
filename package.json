@@ -79,7 +79,7 @@
     "http-link-header": "^1.1.1",
     "immutable": "^4.3.0",
     "imports-loader": "^1.2.0",
-    "intl-messageformat": "^10.3.5",
+    "intl-messageformat": "^10.5.12",
     "js-yaml": "^4.1.0",
     "lodash": "^4.17.21",
     "mark-loader": "^0.1.6",
