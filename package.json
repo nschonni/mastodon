@@ -137,7 +137,7 @@
     "workbox-window": "^7.0.0"
   },
   "devDependencies": {
-    "@formatjs/cli": "^6.1.1",
+    "@formatjs/cli": "^6.2.10",
     "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/react": "^15.0.0",
     "@types/babel__core": "^7.20.1",
