@@ -208,7 +208,7 @@ GEM
       activerecord (>= 4.2, < 8)
     docile (1.4.0)
     domain_name (0.6.20240107)
-    doorkeeper (5.6.9)
+    doorkeeper (5.7.0)
       railties (>= 5)
     dotenv (3.1.2)
     drb (2.2.1)
@@ -925,7 +925,7 @@ DEPENDENCIES
   devise-two-factor
   devise_pam_authenticatable2 (~> 9.2)
   discard (~> 1.2)
-  doorkeeper (~> 5.6)
+  doorkeeper (~> 5.7)
   dotenv
   ed25519 (~> 1.3)
   email_spec
