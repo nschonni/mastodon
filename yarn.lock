@@ -2259,6 +2259,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@formatjs/ecma402-abstract@npm:2.0.0":
+  version: 2.0.0
+  resolution: "@formatjs/ecma402-abstract@npm:2.0.0"
+  dependencies:
+    "@formatjs/intl-localematcher": "npm:0.5.4"
+    tslib: "npm:^2.4.0"
+  checksum: 10c0/94cba291aeadffa3ca416087c2c2352c8a741bb4dcb7f47f15c247b1f043ffcef1af5b20a1b7578fbba9e704fc5f1c079923f3537a273d50162be62f8037625c
+  languageName: node
+  linkType: hard
+
 "@formatjs/fast-memoize@npm:2.2.0":
   version: 2.2.0
   resolution: "@formatjs/fast-memoize@npm:2.2.0"
@@ -2279,6 +2289,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@formatjs/icu-messageformat-parser@npm:2.7.8":
+  version: 2.7.8
+  resolution: "@formatjs/icu-messageformat-parser@npm:2.7.8"
+  dependencies:
+    "@formatjs/ecma402-abstract": "npm:2.0.0"
+    "@formatjs/icu-skeleton-parser": "npm:1.8.2"
+    tslib: "npm:^2.4.0"
+  checksum: 10c0/a3b759a825fb22ffd7b906f6a07b1a079bbc34f72c745de2c2514e439c4bb75bc1a9442eba1bac7ff3ea3010e12076374cd755ad12116b1d066cc90da5fbcbc9
+  languageName: node
+  linkType: hard
+
 "@formatjs/icu-skeleton-parser@npm:1.8.0":
   version: 1.8.0
   resolution: "@formatjs/icu-skeleton-parser@npm:1.8.0"
@@ -2286,6 +2307,16 @@ __metadata:
     "@formatjs/ecma402-abstract": "npm:1.18.2"
     tslib: "npm:^2.4.0"
   checksum: 10c0/10956732d70cc67049d216410b5dc3ef048935d1ea2ae76f5755bb9d0243af37ddeabd5d140ddbf5f6c7047068c3d02a05f93c68a89cedfaf7488d5062885ea4
+  languageName: node
+  linkType: hard
+
+"@formatjs/icu-skeleton-parser@npm:1.8.2":
+  version: 1.8.2
+  resolution: "@formatjs/icu-skeleton-parser@npm:1.8.2"
+  dependencies:
+    "@formatjs/ecma402-abstract": "npm:2.0.0"
+    tslib: "npm:^2.4.0"
+  checksum: 10c0/9b15013acc47b8d560b52942e3dab2abaaa9c5a4410bbd1d490a4b22bf5ca36fdd88b71f241d05479bddf856d0d1d57b7ecc9e79738497ac518616aa6d4d0015
   languageName: node
   linkType: hard
 
@@ -2368,6 +2399,26 @@ __metadata:
     ts-jest:
       optional: true
   checksum: 10c0/68f72ee6379b87b7ef6340e118a5370cb2fa18cbbae08f5f3d10893803a52f0533e644002e0b5e9ffeded5b2f0aa9daad6adf8b487b10f5d2b61f9fb3fed0dbd
+  languageName: node
+  linkType: hard
+
+"@formatjs/ts-transformer@npm:3.13.14":
+  version: 3.13.14
+  resolution: "@formatjs/ts-transformer@npm:3.13.14"
+  dependencies:
+    "@formatjs/icu-messageformat-parser": "npm:2.7.8"
+    "@types/json-stable-stringify": "npm:^1.0.32"
+    "@types/node": "npm:14 || 16 || 17"
+    chalk: "npm:^4.0.0"
+    json-stable-stringify: "npm:^1.0.1"
+    tslib: "npm:^2.4.0"
+    typescript: "npm:5"
+  peerDependencies:
+    ts-jest: ">=27"
+  peerDependenciesMeta:
+    ts-jest:
+      optional: true
+  checksum: 10c0/38450cfce3ec5132f3548c1e9ab098909ca8d2db2b8b6b4b5bb87aa59a4ca1a19bbf6d339ace39bcc931fa80d9946b4c7cf039c9574069b317ae015cd6963bd3
   languageName: node
   linkType: hard
 
@@ -2799,7 +2850,7 @@ __metadata:
     axios: "npm:^1.4.0"
     babel-jest: "npm:^29.5.0"
     babel-loader: "npm:^8.3.0"
-    babel-plugin-formatjs: "npm:^10.5.1"
+    babel-plugin-formatjs: "npm:^10.5.16"
     babel-plugin-lodash: "patch:babel-plugin-lodash@npm%3A3.3.4#~/.yarn/patches/babel-plugin-lodash-npm-3.3.4-c7161075b6.patch"
     babel-plugin-preval: "npm:^5.1.0"
     babel-plugin-transform-react-remove-prop-types: "npm:^0.4.24"
@@ -5196,22 +5247,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-formatjs@npm:^10.5.1":
-  version: 10.5.14
-  resolution: "babel-plugin-formatjs@npm:10.5.14"
+"babel-plugin-formatjs@npm:^10.5.16":
+  version: 10.5.16
+  resolution: "babel-plugin-formatjs@npm:10.5.16"
   dependencies:
     "@babel/core": "npm:^7.10.4"
     "@babel/helper-plugin-utils": "npm:^7.10.4"
     "@babel/plugin-syntax-jsx": "npm:7"
     "@babel/traverse": "npm:7"
     "@babel/types": "npm:^7.12.11"
-    "@formatjs/icu-messageformat-parser": "npm:2.7.6"
-    "@formatjs/ts-transformer": "npm:3.13.12"
+    "@formatjs/icu-messageformat-parser": "npm:2.7.8"
+    "@formatjs/ts-transformer": "npm:3.13.14"
     "@types/babel__core": "npm:^7.1.7"
     "@types/babel__helper-plugin-utils": "npm:^7.10.0"
     "@types/babel__traverse": "npm:^7.1.7"
     tslib: "npm:^2.4.0"
-  checksum: 10c0/78d33f0304c7b6e36334b2f32bacd144cbbe08cb22318ff994e7adc7705b7f8208354c9af9f87b4390d11aee1ea81cfee9f224a57fe5265173b92ee7de921359
+  checksum: 10c0/03d9d2b0b9cdc05c011bfb417a43e5c0f557868ed84d83acbc3cb9072b7fa98f5219473d0bd61f02741c151d6f2162da363bd337522c80af14721ae37f6da86b
   languageName: node
   linkType: hard
 
