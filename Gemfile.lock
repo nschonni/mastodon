@@ -425,7 +425,7 @@ GEM
     mime-types-data (3.2024.0507)
     mini_mime (1.1.5)
     mini_portile2 (2.8.6)
-    minitest (5.23.0)
+    minitest (5.23.1)
     msgpack (1.7.2)
     multi_json (1.15.0)
     multipart-post (2.4.0)
@@ -586,7 +586,7 @@ GEM
     pastel (0.8.0)
       tty-color (~> 0.5)
     pg (1.5.6)
-    pghero (3.4.1)
+    pghero (3.5.0)
       activerecord (>= 6)
     premailer (1.23.0)
       addressable
