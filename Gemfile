@@ -110,7 +110,7 @@ group :opentelemetry do
   gem 'opentelemetry-instrumentation-active_job', '~> 0.7.1', require: false
   gem 'opentelemetry-instrumentation-active_model_serializers', '~> 0.20.1', require: false
   gem 'opentelemetry-instrumentation-concurrent_ruby', '~> 0.21.2', require: false
-  gem 'opentelemetry-instrumentation-excon', '~> 0.22.0', require: false
+  gem 'opentelemetry-instrumentation-excon', '~> 0.22.2', require: false
   gem 'opentelemetry-instrumentation-faraday', '~> 0.24.1', require: false
   gem 'opentelemetry-instrumentation-http', '~> 0.23.2', require: false
   gem 'opentelemetry-instrumentation-http_client', '~> 0.22.3', require: false
