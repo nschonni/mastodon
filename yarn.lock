@@ -257,6 +257,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/helper-plugin-utils@npm:^7.24.7":
+  version: 7.24.7
+  resolution: "@babel/helper-plugin-utils@npm:7.24.7"
+  checksum: 10c0/c3d38cd9b3520757bb4a279255cc3f956fc0ac1c193964bd0816ebd5c86e30710be8e35252227e0c9d9e0f4f56d9b5f916537f2bc588084b0988b4787a967d31
+  languageName: node
+  linkType: hard
+
 "@babel/helper-remap-async-to-generator@npm:^7.24.6":
   version: 7.24.6
   resolution: "@babel/helper-remap-async-to-generator@npm:7.24.6"
@@ -992,7 +999,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-nullish-coalescing-operator@npm:^7.22.3, @babel/plugin-transform-nullish-coalescing-operator@npm:^7.24.6":
+"@babel/plugin-transform-nullish-coalescing-operator@npm:^7.24.6":
   version: 7.24.6
   resolution: "@babel/plugin-transform-nullish-coalescing-operator@npm:7.24.6"
   dependencies:
@@ -1001,6 +1008,18 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: 10c0/53ab5b16bbcf47e842a48f1f0774d238dae0222c3e1f31653307808048e249ed140cba12dfc280cbc9a577cb3bb5b2f50ca0e3e4ffe5260fcf8c3ca0b83fb21e
+  languageName: node
+  linkType: hard
+
+"@babel/plugin-transform-nullish-coalescing-operator@npm:^7.24.7":
+  version: 7.24.7
+  resolution: "@babel/plugin-transform-nullish-coalescing-operator@npm:7.24.7"
+  dependencies:
+    "@babel/helper-plugin-utils": "npm:^7.24.7"
+    "@babel/plugin-syntax-nullish-coalescing-operator": "npm:^7.8.3"
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 10c0/7243c8ff734ed5ef759dd8768773c4b443c12e792727e759a1aec2c7fa2bfdd24f1ecb42e292a7b3d8bd3d7f7b861cf256a8eb4ba144fc9cc463892c303083d9
   languageName: node
   linkType: hard
 
@@ -2746,7 +2765,7 @@ __metadata:
   resolution: "@mastodon/mastodon@workspace:."
   dependencies:
     "@babel/core": "npm:^7.22.1"
-    "@babel/plugin-transform-nullish-coalescing-operator": "npm:^7.22.3"
+    "@babel/plugin-transform-nullish-coalescing-operator": "npm:^7.24.7"
     "@babel/plugin-transform-react-inline-elements": "npm:^7.21.0"
     "@babel/plugin-transform-runtime": "npm:^7.22.4"
     "@babel/preset-env": "npm:^7.22.4"
