@@ -69,7 +69,7 @@ gem 'oj', '~> 3.14'
 gem 'ox', '~> 2.14'
 gem 'parslet'
 gem 'premailer-rails'
-gem 'public_suffix', '~> 6.0'
+gem 'public_suffix', '~> 5.0'
 gem 'pundit', '~> 2.3'
 gem 'rack-attack', '~> 6.6'
 gem 'rack-cors', '~> 2.0', require: 'rack/cors'
@@ -100,6 +100,8 @@ gem 'json-ld'
 gem 'json-ld-preloaded', '~> 3.2'
 gem 'rdf-normalize', '~> 0.5'
 
+gem 'private_address_check', '~> 0.5'
+
 gem 'opentelemetry-api', '~> 1.2.5'
 
 group :opentelemetry do
@@ -121,9 +123,6 @@ group :opentelemetry do
 end
 
 group :test do
-  # Enable usage of all available CPUs/cores during spec runs
-  gem 'flatware-rspec'
-
   # Adds RSpec Error/Warning annotations to GitHub PRs on the Files tab
   gem 'rspec-github', '~> 2.4', require: false
 
