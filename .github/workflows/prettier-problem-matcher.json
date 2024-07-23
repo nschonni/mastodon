@@ -6,7 +6,8 @@
       "pattern": [
         {
           "regexp": "^(.*)$",
-          "file": 1
+          "file": 1,
+          "message": 1
         }
       ]
     }
