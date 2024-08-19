@@ -211,7 +211,7 @@ group :development, :test do
   gem 'test-prof'
 
   # RSpec runner for rails
-  gem 'rspec-rails', '~> 6.0'
+  gem 'rspec-rails', '~> 6.1'
 end
 
 group :production do
