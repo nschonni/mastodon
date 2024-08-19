@@ -999,7 +999,7 @@ DEPENDENCIES
   opentelemetry-instrumentation-net_http (~> 0.22.4)
   opentelemetry-instrumentation-pg (~> 0.28.0)
   opentelemetry-instrumentation-rack (~> 0.24.1)
-  opentelemetry-instrumentation-rails (~> 0.31.0)
+  opentelemetry-instrumentation-rails (~> 0.31.2)
   opentelemetry-instrumentation-redis (~> 0.25.3)
   opentelemetry-instrumentation-sidekiq (~> 0.25.2)
   opentelemetry-sdk (~> 1.4)
