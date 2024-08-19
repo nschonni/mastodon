@@ -989,7 +989,7 @@ DEPENDENCIES
   omniauth_openid_connect (~> 0.6.1)
   opentelemetry-api (~> 1.3.0)
   opentelemetry-exporter-otlp (~> 0.28.0)
-  opentelemetry-instrumentation-active_job (~> 0.7.1)
+  opentelemetry-instrumentation-active_job (~> 0.7.6)
   opentelemetry-instrumentation-active_model_serializers (~> 0.20.1)
   opentelemetry-instrumentation-concurrent_ruby (~> 0.21.2)
   opentelemetry-instrumentation-excon (~> 0.22.0)
