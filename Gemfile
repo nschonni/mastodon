@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-ruby '>= 3.2.0'
+ruby '>= 3.1.0'
 
 gem 'propshaft'
 gem 'puma', '~> 6.3'
@@ -18,14 +18,14 @@ gem 'aws-sdk-s3', '~> 1.123', require: false
 gem 'blurhash', '~> 0.1'
 gem 'fog-core', '<= 2.6.0'
 gem 'fog-openstack', '~> 1.0', require: false
-gem 'jd-paperclip-azure', '~> 3.0', require: false
 gem 'kt-paperclip', '~> 7.2'
+gem 'md-paperclip-azure', '~> 2.2', require: false
 gem 'ruby-vips', '~> 2.2', require: false
 
 gem 'active_model_serializers', '~> 0.10'
 gem 'addressable', '~> 2.8'
 gem 'bootsnap', '~> 1.18.0', require: false
-gem 'browser'
+gem 'browser', '< 6' # https://github.com/fnando/browser/issues/543
 gem 'charlock_holmes', '~> 0.7.7'
 gem 'chewy', '~> 7.3'
 gem 'devise', '~> 4.9'
@@ -47,14 +47,13 @@ gem 'color_diff', '~> 0.1'
 gem 'csv', '~> 3.2'
 gem 'discard', '~> 1.2'
 gem 'doorkeeper', '~> 5.6'
-gem 'faraday-httpclient'
 gem 'fast_blank', '~> 1.0'
 gem 'fastimage'
 gem 'hiredis', '~> 0.6'
 gem 'htmlentities', '~> 4.3'
 gem 'http', '~> 5.2.0'
 gem 'http_accept_language', '~> 2.1'
-gem 'httplog', '~> 1.7.0', require: false
+gem 'httplog', '~> 1.7.0'
 gem 'i18n'
 gem 'idn-ruby', require: 'idn'
 gem 'inline_svg'
