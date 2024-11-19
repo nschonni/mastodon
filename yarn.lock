@@ -2206,8 +2206,8 @@ __metadata:
   linkType: hard
 
 "@formatjs/cli@npm:^6.1.1":
-  version: 6.3.6
-  resolution: "@formatjs/cli@npm:6.3.6"
+  version: 6.3.11
+  resolution: "@formatjs/cli@npm:6.3.11"
   peerDependencies:
     "@glimmer/env": ^0.1.7
     "@glimmer/reference": ^0.91.1 || ^0.92.0
@@ -2236,7 +2236,7 @@ __metadata:
       optional: true
   bin:
     formatjs: bin/formatjs
-  checksum: 10c0/55f10699644c8b879d7fcf38660e7d9b0642c5f40ca59076c25ba190f350b48d7edb7f3d8481cc6139d3a708ee73f877c2c0a7d1865f15e80a73667270c9b7e3
+  checksum: 10c0/31d5fac85314e97591c4c6a4793abf1d9c6fbf790fbbea779b2a4c0f742f1859804f290e77be06d128274468e44bc27992196aacb4cb6f2fbd141755ca79a98d
   languageName: node
   linkType: hard
 
@@ -9508,11 +9508,11 @@ __metadata:
   linkType: hard
 
 "husky@npm:^9.0.11":
-  version: 9.1.6
-  resolution: "husky@npm:9.1.6"
+  version: 9.1.7
+  resolution: "husky@npm:9.1.7"
   bin:
     husky: bin.js
-  checksum: 10c0/705673db4a247c1febd9c5df5f6a3519106cf0335845027bb50a15fba9b1f542cb2610932ede96fd08008f6d9f49db0f15560509861808b0031cdc0e7c798bac
+  checksum: 10c0/35bb110a71086c48906aa7cd3ed4913fb913823715359d65e32e0b964cb1e255593b0ae8014a5005c66a68e6fa66c38dcfa8056dbbdfb8b0187c0ffe7ee3a58f
   languageName: node
   linkType: hard
 
