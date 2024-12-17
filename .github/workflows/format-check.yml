@@ -19,4 +19,6 @@ jobs:
         uses: ./.github/actions/setup-javascript
 
       - name: Check formatting with Prettier
-        run: yarn format:check
+        run: |
+          echo "::add-matcher::.github/workflows/prettier-problem-matcher.json"
+          yarn prettier --list-different .
