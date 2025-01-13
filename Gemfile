@@ -195,7 +195,7 @@ end
 
 group :development, :test do
   # Interactive Debugging tools
-  gem 'debug', '~> 1.8'
+  gem 'debug', '~> 1.10'
 
   # Generate fake data values
   gem 'faker', '~> 3.2'
