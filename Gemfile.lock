@@ -743,7 +743,7 @@ GEM
     ruby-vips (2.2.2)
       ffi (~> 1.12)
       logger
-    rubyzip (2.3.2)
+    rubyzip (2.4.1)
     rufus-scheduler (3.9.1)
       fugit (~> 1.1, >= 1.1.6)
     safety_net_attestation (0.4.0)
@@ -1005,7 +1005,7 @@ DEPENDENCIES
   ruby-prof
   ruby-progressbar (~> 1.13)
   ruby-vips (~> 2.2)
-  rubyzip (~> 2.3)
+  rubyzip (~> 2.4)
   sanitize (~> 6.0)
   scenic (~> 1.7)
   selenium-webdriver
