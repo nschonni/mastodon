@@ -58,7 +58,7 @@ gem 'httplog', '~> 1.7.0', require: false
 gem 'i18n'
 gem 'idn-ruby', require: 'idn'
 gem 'inline_svg'
-gem 'irb', '~> 1.8'
+gem 'irb', '~> 1.14'
 gem 'kaminari', '~> 1.2'
 gem 'link_header', '~> 0.0'
 gem 'mario-redis-lock', '~> 1.2', require: 'redis_lock'
