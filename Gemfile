@@ -150,7 +150,7 @@ group :test do
   gem 'json-schema', '~> 5.0'
 
   # Test harness fo rack components
-  gem 'rack-test', '~> 2.1'
+  gem 'rack-test', '~> 2.2'
 
   gem 'shoulda-matchers'
 
