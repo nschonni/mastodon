@@ -2398,9 +2398,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@formatjs/ts-transformer@npm:3.13.30":
-  version: 3.13.30
-  resolution: "@formatjs/ts-transformer@npm:3.13.30"
+"@formatjs/ts-transformer@npm:3.13.31":
+  version: 3.13.31
+  resolution: "@formatjs/ts-transformer@npm:3.13.31"
   dependencies:
     "@formatjs/icu-messageformat-parser": "npm:2.11.0"
     "@types/json-stable-stringify": "npm:1"
@@ -2410,11 +2410,11 @@ __metadata:
     tslib: "npm:2"
     typescript: "npm:5"
   peerDependencies:
-    ts-jest: ">=27"
+    ts-jest: 27 || 28 || 29
   peerDependenciesMeta:
     ts-jest:
       optional: true
-  checksum: 10c0/ef828b477863b8205390ed42d94c4a8d4fcab10d4982e27dc3feaa85c1e2da317b73108f8d3b32f6191d1c5c41eb34d6909a53ba734dfca9146842992268d95c
+  checksum: 10c0/bfd7a41203c2b1691d883b3c306f3ae413b94c4875dec75df2be0e62da22625f673e41ecdc3257be40fe4a5b22a311365c2462d00a98f9bac59f00488543add0
   languageName: node
   linkType: hard
 
@@ -2850,7 +2850,7 @@ __metadata:
     axios: "npm:^1.4.0"
     babel-jest: "npm:^29.5.0"
     babel-loader: "npm:^8.3.0"
-    babel-plugin-formatjs: "npm:^10.5.1"
+    babel-plugin-formatjs: "npm:^10.5.34"
     babel-plugin-lodash: "patch:babel-plugin-lodash@npm%3A3.3.4#~/.yarn/patches/babel-plugin-lodash-npm-3.3.4-c7161075b6.patch"
     babel-plugin-preval: "npm:^5.1.0"
     babel-plugin-transform-react-remove-prop-types: "npm:^0.4.24"
@@ -5308,9 +5308,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-formatjs@npm:^10.5.1":
-  version: 10.5.33
-  resolution: "babel-plugin-formatjs@npm:10.5.33"
+"babel-plugin-formatjs@npm:^10.5.34":
+  version: 10.5.34
+  resolution: "babel-plugin-formatjs@npm:10.5.34"
   dependencies:
     "@babel/core": "npm:^7.25.0"
     "@babel/helper-plugin-utils": "npm:^7.25.0"
@@ -5318,12 +5318,12 @@ __metadata:
     "@babel/traverse": "npm:^7.25.0"
     "@babel/types": "npm:^7.25.0"
     "@formatjs/icu-messageformat-parser": "npm:2.11.0"
-    "@formatjs/ts-transformer": "npm:3.13.30"
+    "@formatjs/ts-transformer": "npm:3.13.31"
     "@types/babel__core": "npm:^7.20.5"
     "@types/babel__helper-plugin-utils": "npm:^7.10.3"
     "@types/babel__traverse": "npm:^7.20.6"
     tslib: "npm:2"
-  checksum: 10c0/57c0477c576fbf717a11f0ca15d3f18990264a36f20d8d7e2b66461ed1e6b6880bb4b7847b7f4289a81b45f36b7ec2687becb2dde5006b53f97953b3cc3bc39b
+  checksum: 10c0/6e6c67db41044427a7f182e7c18a8519e5aca96645de094244b332cb8c82ed498c56a4634e4e4ed1a4ef85c8e996669ef5bddd63ee9c45d6e512cbbf782af2a2
   languageName: node
   linkType: hard
 
