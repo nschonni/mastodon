@@ -2212,9 +2212,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@formatjs/cli@npm:^6.1.1":
-  version: 6.3.14
-  resolution: "@formatjs/cli@npm:6.3.14"
+"@formatjs/cli@npm:^6.5.1":
+  version: 6.5.1
+  resolution: "@formatjs/cli@npm:6.5.1"
   peerDependencies:
     "@glimmer/env": ^0.1.7
     "@glimmer/reference": ^0.91.1 || ^0.92.0 || ^0.93.0
@@ -2243,7 +2243,7 @@ __metadata:
       optional: true
   bin:
     formatjs: bin/formatjs
-  checksum: 10c0/b4c83ed7fdc8dcd48b2f48fa9cca65b52472fb096eb028517a872f8a71ed3964f4b0a6bbc607f821a9504f396fe7341ef4d9ad44a381a37f280ed7547de66f41
+  checksum: 10c0/c3ac8890b13b2a3a82ea04c0831ee9124700663f0718d26dc5205236d3a0a81d66d75846b77e515983ed5a99b3f1e5c6c1945fb18477da90847b1caa2400b6d3
   languageName: node
   linkType: hard
 
@@ -2805,7 +2805,7 @@ __metadata:
     "@dnd-kit/core": "npm:^6.1.0"
     "@dnd-kit/sortable": "npm:^10.0.0"
     "@dnd-kit/utilities": "npm:^3.2.2"
-    "@formatjs/cli": "npm:^6.1.1"
+    "@formatjs/cli": "npm:^6.5.1"
     "@formatjs/intl-pluralrules": "npm:^5.2.2"
     "@gamestdio/websocket": "npm:^0.3.2"
     "@github/webauthn-json": "npm:^2.1.1"
