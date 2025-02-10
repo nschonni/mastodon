@@ -117,7 +117,7 @@
     "redux-immutable": "^4.0.0",
     "regenerator-runtime": "^0.14.0",
     "requestidlecallback": "^0.3.0",
-    "sass": "^1.62.1",
+    "sass": "^1.84.0",
     "sass-loader": "^10.2.0",
     "stacktrace-js": "^2.0.2",
     "stringz": "^2.1.0",
