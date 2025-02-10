@@ -119,7 +119,7 @@ group :opentelemetry do
   gem 'opentelemetry-instrumentation-rails', '~> 0.35.0', require: false
   gem 'opentelemetry-instrumentation-redis', '~> 0.26.0', require: false
   gem 'opentelemetry-instrumentation-sidekiq', '~> 0.26.0', require: false
-  gem 'opentelemetry-sdk', '~> 1.4', require: false
+  gem 'opentelemetry-sdk', '~> 1.7', require: false
 end
 
 group :test do
