@@ -866,7 +866,7 @@ GEM
     webfinger (1.2.0)
       activesupport
       httpclient (>= 2.4)
-    webmock (3.24.0)
+    webmock (3.25.0)
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
@@ -1037,7 +1037,7 @@ DEPENDENCIES
   twitter-text (~> 3.1.0)
   tzinfo-data (~> 1.2023)
   webauthn (~> 3.0)
-  webmock (~> 3.18)
+  webmock (~> 3.25)
   webpacker (~> 5.4)
   webpush!
   xorcist (~> 1.1)
