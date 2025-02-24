@@ -50,7 +50,7 @@
     "@gamestdio/websocket": "^0.3.2",
     "@github/webauthn-json": "^2.1.1",
     "@rails/ujs": "7.1.501",
-    "@reduxjs/toolkit": "^2.0.1",
+    "@reduxjs/toolkit": "^2.6.0",
     "@svgr/webpack": "^5.5.0",
     "arrow-key-navigation": "^1.2.0",
     "async-mutex": "^0.5.0",
