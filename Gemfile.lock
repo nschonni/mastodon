@@ -713,11 +713,11 @@ GEM
       rspec-expectations (~> 3.13)
       rspec-mocks (~> 3.13)
       rspec-support (~> 3.13)
-    rspec-sidekiq (5.0.0)
+    rspec-sidekiq (5.1.0)
       rspec-core (~> 3.0)
       rspec-expectations (~> 3.0)
       rspec-mocks (~> 3.0)
-      sidekiq (>= 5, < 8)
+      sidekiq (>= 5, < 9)
     rspec-support (3.13.2)
     rubocop (1.73.2)
       json (~> 2.3)
@@ -1016,7 +1016,7 @@ DEPENDENCIES
   rqrcode (~> 2.2)
   rspec-github (~> 3.0)
   rspec-rails (~> 7.0)
-  rspec-sidekiq (~> 5.0)
+  rspec-sidekiq (~> 5.1)
   rubocop
   rubocop-capybara
   rubocop-i18n
