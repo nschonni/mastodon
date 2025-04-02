@@ -2879,7 +2879,7 @@ __metadata:
     async-mutex: "npm:^0.5.0"
     axios: "npm:^1.4.0"
     babel-jest: "npm:^29.5.0"
-    babel-loader: "npm:^8.3.0"
+    babel-loader: "npm:^10.0.0"
     babel-plugin-formatjs: "npm:^10.5.37"
     babel-plugin-lodash: "patch:babel-plugin-lodash@npm%3A3.3.4#~/.yarn/patches/babel-plugin-lodash-npm-3.3.4-c7161075b6.patch"
     babel-plugin-preval: "npm:^5.1.0"
@@ -4002,7 +4002,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/json-schema@npm:*, @types/json-schema@npm:^7.0.15, @types/json-schema@npm:^7.0.5, @types/json-schema@npm:^7.0.8":
+"@types/json-schema@npm:*, @types/json-schema@npm:^7.0.15, @types/json-schema@npm:^7.0.8":
   version: 7.0.15
   resolution: "@types/json-schema@npm:7.0.15"
   checksum: 10c0/a996a745e6c5d60292f36731dd41341339d4eeed8180bb09226e5c8d23759067692b1d88e5d91d72ee83dfc00d3aca8e7bd43ea120516c17922cbcb7c3e252db
@@ -5514,18 +5514,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-loader@npm:^8.3.0":
-  version: 8.4.1
-  resolution: "babel-loader@npm:8.4.1"
+"babel-loader@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "babel-loader@npm:10.0.0"
   dependencies:
-    find-cache-dir: "npm:^3.3.1"
-    loader-utils: "npm:^2.0.4"
-    make-dir: "npm:^3.1.0"
-    schema-utils: "npm:^2.6.5"
+    find-up: "npm:^5.0.0"
   peerDependencies:
-    "@babel/core": ^7.0.0
-    webpack: ">=2"
-  checksum: 10c0/efdca9c3ef502af58b923a32123d660c54fd0be125b7b64562c8a43bda0a3a55dac0db32331674104e7e5184061b75c3a0e395b2c5ccdc7cb2125dd9ec7108d2
+    "@babel/core": ^7.12.0
+    webpack: ">=5.61.0"
+  checksum: 10c0/882dfacde3ee24b432ad57e468832cd0821e2a410f6c5b75ff945f069a8956592b28c6c357df5bb03db73d2741ec3db5febb106ac0bb3591c3d4288f2cf4df0e
   languageName: node
   linkType: hard
 
@@ -11749,7 +11746,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loader-utils@npm:^2.0.0, loader-utils@npm:^2.0.4":
+"loader-utils@npm:^2.0.0":
   version: 2.0.4
   resolution: "loader-utils@npm:2.0.4"
   dependencies:
@@ -11985,7 +11982,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"make-dir@npm:^3.0.2, make-dir@npm:^3.1.0":
+"make-dir@npm:^3.0.2":
   version: 3.1.0
   resolution: "make-dir@npm:3.1.0"
   dependencies:
@@ -15841,17 +15838,6 @@ __metadata:
     ajv-errors: "npm:^1.0.0"
     ajv-keywords: "npm:^3.1.0"
   checksum: 10c0/670e22d7f0ff0b6f4514a4d6fb27c359101b44b7dbfd9563af201af72eb4a9ff06144020cab5f85b16e88821fd09b97cbdae6c893721c6528c8cb704124e6a2f
-  languageName: node
-  linkType: hard
-
-"schema-utils@npm:^2.6.5":
-  version: 2.7.1
-  resolution: "schema-utils@npm:2.7.1"
-  dependencies:
-    "@types/json-schema": "npm:^7.0.5"
-    ajv: "npm:^6.12.4"
-    ajv-keywords: "npm:^3.5.2"
-  checksum: 10c0/f484f34464edd8758712d5d3ba25a306e367dac988aecaf4ce112e99baae73f33a807b5cf869240bb6648c80720b36af2d7d72be3a27faa49a2d4fc63fa3f85f
   languageName: node
   linkType: hard
 
