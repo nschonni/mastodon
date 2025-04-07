@@ -395,7 +395,7 @@ GEM
       rexml
     link_header (0.0.8)
     lint_roller (1.1.0)
-    linzer (0.6.3)
+    linzer (0.6.4)
       openssl (~> 3.0, >= 3.0.0)
       rack (>= 2.2, < 4.0)
       starry (~> 0.2)
@@ -988,7 +988,7 @@ DEPENDENCIES
   letter_opener (~> 1.8)
   letter_opener_web (~> 3.0)
   link_header (~> 0.0)
-  linzer (~> 0.6.1)
+  linzer (~> 0.6.4)
   lograge (~> 0.12)
   mail (~> 2.8)
   mario-redis-lock (~> 1.2)
