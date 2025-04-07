@@ -569,7 +569,7 @@ GEM
     opentelemetry-instrumentation-redis (0.26.1)
       opentelemetry-api (~> 1.0)
       opentelemetry-instrumentation-base (~> 0.23.0)
-    opentelemetry-instrumentation-sidekiq (0.26.0)
+    opentelemetry-instrumentation-sidekiq (0.26.1)
       opentelemetry-api (~> 1.0)
       opentelemetry-instrumentation-base (~> 0.23.0)
     opentelemetry-registry (0.4.0)
@@ -1018,7 +1018,7 @@ DEPENDENCIES
   opentelemetry-instrumentation-rack (~> 0.26.0)
   opentelemetry-instrumentation-rails (~> 0.36.0)
   opentelemetry-instrumentation-redis (~> 0.26.0)
-  opentelemetry-instrumentation-sidekiq (~> 0.26.0)
+  opentelemetry-instrumentation-sidekiq (~> 0.26.1)
   opentelemetry-sdk (~> 1.4)
   ox (~> 2.14)
   parslet
